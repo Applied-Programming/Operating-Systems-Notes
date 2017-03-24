@@ -2,6 +2,8 @@
 
 This repository contains the important OS concepts and notes taken down by me while undertaking the Operating Systems course at my undergraduate school and also the [Introduction to Operating Systems](https://www.udacity.com/course/introduction-to-operating-systems--ud923) course at Udacity. The repo contains summarized information and key points regarding the main OS concepts as follows:
 
+
+|Operating System Concepts:|
 |--------------------------------------|
 |[Lesson 1: Operating Systems Overview]()|
 |[Lesson 2: Processes and Process Management]()|
@@ -20,7 +22,7 @@ This repository contains the important OS concepts and notes taken down by me wh
 ## References :
 
 * [Introduction to Operating Systems](https://www.udacity.com/course/introduction-to-operating-systems--ud923) course at Udacity
-* OS course at my undergraduate school
-* Operating System Concepts by Silberschatz, Galvin and Gagne, 9th Edition
+* OS course at my undergraduate university.
+* Operating System Concepts by Silberschatz, Galvin and Gagne, 9th Edition Textbook.
 
 <hr>
