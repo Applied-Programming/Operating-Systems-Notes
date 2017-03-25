@@ -35,11 +35,9 @@ LINUX | Symbian
 
 - **Abstractions** (corresponds to applications that OS executes)
 	- process, thread, file, socket,  memory page
- 
 - **Mechanisms**  (on top of Abstractions)
 	- create, schedule, open, write, allocate
-    
-- ** Policies** (how mechanisms are used to manage underlying hardware)    
+- **Policies** (how mechanisms are used to manage underlying hardware)    
 	- Least Recently Used (LRU) , Earliest Deadline First (EDF), etc.
     
 #### Example :
@@ -47,17 +45,14 @@ LINUX | Symbian
 _Memory Management:_
 
 - **Abstractions**: Memory page
- 
 - **Mechanisms**: Allocate, map to a process
-    
-- ** Policies**: LRU
+- **Policies**: LRU
 
 ## OS Design Principles
 
 - Seperation of mechanism and policy
 	- implement flexible mechanisms to support many policies 
     - e.g. LRU, LFU, random
-    
 - Optimize for common case 
 	- Where will the OS be used?
     - What will the user want to execute on that machine?
@@ -65,8 +60,8 @@ _Memory Management:_
     
 ## User/ Kernel Protection Boundary
 
-* user-level -> applications [underprivileged mode]
-* kernel-level -> OS Kernel [privileged access, hardware access]
+* user-level => applications [underprivileged mode]
+* kernel-level => OS Kernel [privileged access, hardware access]
 
 ![userkernelprotectionboundary](images/userkernelprotectionboundary.png)
 
@@ -76,7 +71,6 @@ _Memory Management:_
     	- open (file)
         - send (socket)
         - malloc (memory)
-        
 	- signals
     
 ## System call Flowcart
@@ -87,7 +81,6 @@ _Memory Management:_
 	- write arguments
     - save relevant data ast well defined location
     - make system calls using system call number
-    
 - In synchronous mode : wait until system call completes.
 
 ## Basic OS services
@@ -115,5 +108,3 @@ Protection | chmod(); umask(); chown();
 ![linuxarchitecture](images/linuxarch.png)
 
 <hr>
-
-
