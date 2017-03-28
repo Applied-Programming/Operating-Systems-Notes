@@ -233,7 +233,7 @@
 <li>Therefore multithreading can be used to hide latency.</li>
 </ul>
 </li>
-<li>Benefits to both applicatioons and OS code <ul>
+<li>Benefits to both applications and OS code <ul>
 <li>Multithreaded OS kernel<ul>
 <li>threads working on behalf of applications</li>
 <li>OS level services like daemons and drivers</li>
@@ -318,14 +318,14 @@ unlock(mutex)
 
 <p><img alt="mutex" src="../images/mutex.png" /></p>
 <h2 id="producer-consumer-problem">Producer Consumer problem</h2>
-<p>What if the processing you wish to perform with mutual exclusion needs to occur under certai conditions?</p>
+<p>What if the processing you wish to perform with mutual exclusion needs to occur under certain conditions?</p>
 <p>For e.g. The producer appends items to a list until the list is full, and the consumer has to print out all the items of the list once the list if full and then empty the list. Thus we have to execute the Consumer thread only under a certain condition (here- when the list becomes empty, print items).</p>
 <p>Solution: Use <strong>Condition Variables</strong></p>
 <ul>
 <li>
 <p>Wait(mutex, condition)</p>
 <ul>
-<li>mutex is automatically released and reaquired on wait</li>
+<li>mutex is automatically released and re-aquired on wait</li>
 <li>The consumer applies <em>Wait</em> until the list is full</li>
 </ul>
 </li>
@@ -480,7 +480,7 @@ Pre-check for cycles and then delay process or change code</p>
     - <strong>+</strong> workers don't need to sync
     - <strong>-</strong> boss must keep track of everyone
 2. Placing work in queue
-    - <strong>+</strong> boss doesn't neeed to know details about workers
+    - <strong>+</strong> boss doesn't need to know details about workers
     - <strong>-</strong> queue synchronization</p>
 <p>How many workers?
 - on demand
@@ -550,9 +550,7 @@ Pipeline(11) = 120 + (10*20) = 320 ms
 <p>POSIX = Portable OS interface</p>
 <h3 id="compiling-pthreads">Compiling PThreads</h3>
 <ol>
-<li>
-<h1 id="include-in-main-file">include<pthread.h> in main file</h1>
-</li>
+<li>#include<pthread.h> in main file</li>
 <li>Compile source with -lpthread or -pthread</li>
 </ol>
 <pre><code>gcc -o main main.c -lpthread
@@ -604,7 +602,7 @@ gcc -o main main.c -pthread
 </thead>
 <tbody>
 <tr>
-<td>Large continuos DS</td>
+<td>Large continuous DS</td>
 <td>Smaller DS</td>
 </tr>
 <tr>
@@ -755,7 +753,7 @@ reset_field_in_mask(mask)
 <li>
 <p>Interrupt masks are per CPU </p>
 <ul>
-<li>if mask disables interrupt, hardware interrupt rounting mechanism will not deliver interrupt</li>
+<li>if mask disables interrupt, hardware interrupt routing mechanism will not deliver interrupt</li>
 </ul>
 </li>
 <li>
@@ -829,7 +827,7 @@ reset_field_in_mask(mask)
 <p><img alt="case4" src="../images/case4.png" /></p>
 <p><strong>Optimize common case</strong></p>
 <ul>
-<li>signals less frequennt than signal mask updates</li>
+<li>signals less frequent than signal mask updates</li>
 <li>system calls avoided<ul>
 <li>cheaper to update user-level mask</li>
 </ul>
@@ -907,7 +905,7 @@ reset_field_in_mask(mask)
 </ul>
 <h3 id="asynchronous-io-operations">Asynchronous I/O operations</h3>
 <p>Asynchronous I/O operations fit well with Event-driven models   </p>
-<p>Since asynchronous calls are not easily avalible, helpers can be used to implement the async call functionality:</p>
+<p>Since asynchronous calls are not easily available, helpers can be used to implement the async call functionality:</p>
 <ul>
 <li>designated for blocking I/O operations only</li>
 <li>pipe/socket based communication with event dispatcher<ul>

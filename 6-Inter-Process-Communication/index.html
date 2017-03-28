@@ -187,7 +187,7 @@
 <p><strong>Inter Process Communication</strong>(IPC) is an OS supported mechanism for interaction among processes (coordination and communication)   </p>
 <ul>
 <li>Message Passing<ul>
-<li>e.g. sockets, pips, msgs, queues</li>
+<li>e.g. sockets, pips, messages, queues</li>
 </ul>
 </li>
 <li>Memory based IPC <ul>
@@ -253,7 +253,7 @@
 <ul>
 <li>send() and recv() : pass message buffers</li>
 <li>socket() : create kernel level socket buffer</li>
-<li>associated neccessary kernel processing (TCP-IP,..)</li>
+<li>associated necessary kernel processing (TCP-IP,..)</li>
 <li>If different machines, channel between processes and network devices</li>
 <li>If same machine, bypass full protocol stack</li>
 </ul>
@@ -265,7 +265,7 @@
 <li>physical pages mapped into virtual address space</li>
 <li>VA(P1) and VA(P2) map to same physical address</li>
 <li>VA(P1) != VA(P2)</li>
-<li>physical mempry doesn't need to be contiguous</li>
+<li>physical memory doesn't need to be contiguous</li>
 </ol>
 </li>
 <li>APIs : SysV, POSIX, memory mapped files, Android ashmem   </li>
@@ -289,7 +289,7 @@
 2. Shared Memory : must establish all mappings among processes' address space and shared memory pages</p>
 <p>Thus, it depends.</p>
 <h2 id="copy-vs-map">Copy vs Map</h2>
-<p>Goal for both is to transfer data from one into target saddress space</p>
+<p>Goal for both is to transfer data from one into target address space</p>
 <table>
 <thead>
 <tr>
@@ -318,7 +318,7 @@
 </table>
 <ul>
 <li>Large Data: t(Copy) &gt;&gt; t(Map)<ul>
-<li>e.g. tradeoff exercised in Window "Local" Procedure Calls (LPC)</li>
+<li>e.g. trade-off exercised in Window "Local" Procedure Calls (LPC)</li>
 </ul>
 </li>
 </ul>

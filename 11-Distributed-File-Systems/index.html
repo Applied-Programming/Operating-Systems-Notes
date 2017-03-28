@@ -209,13 +209,13 @@
 <li>like FTP, SVN </li>
 <li><strong>+</strong> local read/writes at client</li>
 <li><strong>-</strong> entire file download/upload evn for small accesses</li>
-<li><strong>-</strong> server gives up contro;</li>
+<li><strong>-</strong> server gives up control</li>
 </ul>
 </li>
 <li>Extreme2 : True Remote File Access<ul>
 <li>Every access to remote file, nothing done locally</li>
 <li><strong>+</strong> file access centralized, easy to reason about consistency</li>
-<li><strong>-</strong> every file operation pays network cost, limits server scalablity</li>
+<li><strong>-</strong> every file operation pays network cost, limits server scalability</li>
 </ul>
 </li>
 </ol>
@@ -257,7 +257,7 @@
 </tr>
 <tr>
 <td><strong>+</strong> No resources are used on server side (CPU, MM). On failure just restart</td>
-<td><strong>-</strong> On failure, need checkpoining and recovery mechanisms</td>
+<td><strong>-</strong> On failure, need checkpointing and recovery mechanisms</td>
 </tr>
 </tbody>
 </table>
@@ -316,7 +316,7 @@
 <li>clients have a "lease" on cached data (not exclusively necessary)</li>
 </ul>
 </li>
-<li>servers invalidates periodically =&gt; provides biunds on "inconsistency"</li>
+<li>servers invalidates periodically =&gt; provides bounds on "inconsistency"</li>
 <li>augment with flush()/sync() API</li>
 </ul>
 </li>
@@ -337,8 +337,8 @@
 </tr>
 <tr>
 <td>Advantages</td>
-<td>Load balancing, availibility, fault tolerance </td>
-<td>Availibility vs single server DFS;<br>Scalability with file system size;<br>single file writes simpler</td>
+<td>Load balancing, availability, fault tolerance </td>
+<td>availability vs single server DFS;<br>Scalability with file system size;<br>single file writes simpler</td>
 </tr>
 <tr>
 <td>Disadvantages</td>

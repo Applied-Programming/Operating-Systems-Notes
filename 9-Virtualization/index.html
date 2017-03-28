@@ -291,7 +291,7 @@
 </ul>
 <h2 id="problems-with-trap-and-emulate">Problems with Trap-and-Emulate</h2>
 <ul>
-<li>17 privileged information do not trao but fail silently</li>
+<li>17 privileged information do not trap but fail silently</li>
 <li>Hypervisor doesn't know, so it doesn't try to change settings</li>
 <li>OS doesn't know, so assumes change was successful</li>
 </ul>
@@ -305,7 +305,7 @@
 </ul>
 </li>
 <li>Otherwise run at hardware speeds<ul>
-<li>cache translated blocks to ammortize translation costs</li>
+<li>cache translated blocks to amortize translation costs</li>
 </ul>
 </li>
 </ol>
@@ -314,7 +314,7 @@
 <p><strong>Approach</strong> : Paravirtualization : modify guest OSs so that </p>
 <ul>
 <li>it knows it is running virtualized</li>
-<li>it makes explicit calls to hyperisor (hypercalls)</li>
+<li>it makes explicit calls to hypervisor (hypercalls)</li>
 <li>hypercalls (~ system calls)<ul>
 <li>package context information</li>
 <li>specify desired hypercall</li>

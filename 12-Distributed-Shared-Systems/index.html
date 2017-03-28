@@ -207,7 +207,7 @@
 </ul>
 <p>Examples: Big-data analytics, web searches, context sharing or distributed shared memory (DSM)</p>
 <h2 id="distributed-shared-memory-dsm">Distributed Shared Memory (DSM)</h2>
-<p>DSM is a service that manages memory accross multiple nodes so that applications that are running on top will have an illusion that they are running on a shared memory.</p>
+<p>DSM is a service that manages memory across multiple nodes so that applications that are running on top will have an illusion that they are running on a shared memory.</p>
 <ul>
 <li>Each node <ul>
 <li>"owns" state =&gt; memory</li>
@@ -282,8 +282,8 @@
 </li>
 <li>Hence, migration is okay for SRSW but not for all. </li>
 <li>Caching and Replication        <ul>
-<li>Copies of data to incerease data access</li>
-<li>for many concurrent writes, overheads too high but stil generally better than Migration</li>
+<li>Copies of data to increase data access</li>
+<li>for many concurrent writes, overheads too high but still generally better than Migration</li>
 </ul>
 </li>
 </ul>
@@ -392,12 +392,12 @@
 <ul>
 <li>memory updates from different  processors may be arbitrarily interleaved</li>
 <li>All processes will see the same interleaving</li>
-<li>Operations from the same process always appearin order they were issued</li>
+<li>Operations from the same process always appear in the order they were issued</li>
 </ul>
 <h3 id="causal-consistency">Causal Consistency</h3>
 <p><img alt="causal.png" src="../images/causal.png" /></p>
 <ul>
-<li>For writes not causally related, "concurrent" writes doesnt gurantee.</li>
+<li>For writes not causally related, "concurrent" writes doesn't guarantee.</li>
 <li>Don't permit arbitrary ordering from same process writer</li>
 </ul>
 <h3 id="weak-consistency">Weak Consistency</h3>
