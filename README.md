@@ -1,5 +1,4 @@
 <hr>
-
 # :books: Operating Systems Notes
 
 This repository contains documentation regarding all the important OS concepts and notes taken down by me while undertaking the Operating Systems course at my undergraduate school and also the [Introduction to Operating Systems](https://www.udacity.com/course/introduction-to-operating-systems--ud923) course at Udacity. The repo contains summarized information and key points regarding the main OS concepts. 
